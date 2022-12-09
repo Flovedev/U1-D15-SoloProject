@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    width: 95%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: red;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+table,
+th,
+td {
+    border: 2px solid;
+    border-spacing: 5px;
+}
+
+.border-class {
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+p {
+    margin: 10px;
+}
+
+.font-change {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.hide-content {
+    display: none;
+}
+
+td {
+    border-color: green;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border: 3px dotted red;
+}
