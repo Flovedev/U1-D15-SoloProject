@@ -9,7 +9,7 @@ h1 {
 }
 
 a {
-    color: red;
+    color: green;
 }
 
 img {
@@ -52,4 +52,12 @@ table {
 
 tr {
     border: 3px dotted red;
+}
+
+.new-color {
+    color: red;
+}
+
+.red-background {
+    background-color: red;
 }
