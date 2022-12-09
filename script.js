@@ -12,7 +12,6 @@ let excercise24 = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 console.log(excercise24)
 
 function randomNumbers() {
-    // return Math.floor(Math.random() * 100)
     let numberContainer = []
     for (let index = 1; index < 101; index++) {
         numberContainer.push(Math.floor(Math.random() * 100))
@@ -94,28 +93,21 @@ function getContainer() {
     return containerSelector
 }
 
-// TODO
+
 function getEveryTd() {
+    let tdNode = document.querySelectorAll('td')
+    return tdNode
+}
+
+function printTextTd() {
     let allTd = document.querySelectorAll('td');
     let tdNode = []
     for (let index = 0; index < allTd.length; index++) {
-        tdNode.push(allTd.innerText);
+        tdNode.push(allTd[index].innerText);
     }
-    console.log(tdNode)
+    return tdNode
 
 }
-
-// TODO
-// function printTextTd() {
-//     let tdNode = document.querySelectorAll('td')
-//     let textContainer = []
-//     for (let index = 0; index < tdNode.length; index++) {
-//         textContainer.push(index);
-//     }
-//     return textContainer
-// }
-
-// console.log(printTextTd())
 
 function changeH1() {
     let h1Node = document.querySelector('h1')
@@ -143,10 +135,11 @@ function extraRow() {
 }
 
 function addRedBackground() {
-    let linkNode = document.querySelectorAll('link')
-    for (let redBackground of linkNode) {
-        redBackground.classList.add('red-background')
+    let linkNode = document.getElementsByClassName('link')
+    for (let index = 0; index < linkNode.length; index++) {
+        linkNode[index].classList.add('red-background')
     }
+    return "All links are red now"
 }
 
 // window.onload = alert("Page loaded")
